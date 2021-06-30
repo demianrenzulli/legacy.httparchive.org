@@ -8,6 +8,10 @@
 // 3. Test your change by following the instructions at https://github.com/HTTPArchive/almanac.httparchive.org/issues/33#issuecomment-502288773.
 // 4. Submit a PR to update this file.
 
+// TODO: For 2022 we would like to include ways to detect sites that have been configured to be distributed in stores:
+// 1. How many asset links have a 'delegate_permission/common.handle_all_urls' permission
+// 2. How many asset links have a target with a "android_app" namespace and sha256 fingerprint
+
 function fetchWithTimeout(url) {
   var controller = new AbortController();
   setTimeout(() => {controller.abort()}, 5000);
